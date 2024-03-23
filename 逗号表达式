@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<string.h>
+#include<errno.h>
+#include<stdlib.h>
+#include<math.h>
+#include<stdio.h>
+
+int main()
+{
+	int a[3][2] = { (0,1),(2,3),(4,5) };
+	int* p;
+	p = a[0];
+	printf("%d", p[0]);
+	return 0;
+}
+
+逗号表达式：
+逗号表达式的要领：
+
+1.从左到右逐个计算；
+
+2.逗号表达式作为一个整体，它的值为最后一个表达式的值；
+
+3. 逗号表达式的优先级别在所有运算符中最低。
+p[0]==a[0][0]
